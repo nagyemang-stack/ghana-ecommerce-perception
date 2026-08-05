@@ -1,0 +1,63 @@
+# Ghanaian E-Commerce — Brand Perception Analysis
+
+**Author:** Caleb Agyemang  
+**Portfolio:** [calebagyemang.vercel.app](https://calebagyemang.vercel.app)
+
+## Overview
+
+A sentiment and trust analysis of Ghana's e-commerce ecosystem, tracking customer reviews, brand perception, and trust factors across 5 major platforms using publicly available data.
+
+## Data Sources
+
+| Source | Type | Coverage |
+|--------|------|----------|
+| Trustpilot Reviews | Consumer | Jumia Ghana (4,200+ reviews) |
+| Google Play Store | App Ratings | All 5 platforms |
+| Social Media (Twitter/X, Facebook) | Sentiment | Brand mentions, complaints |
+| Ghana E-Commerce National Strategy 2025-2029 | Policy | Regulatory context |
+| Academic Market Research | Survey | 382 Ghanaian online consumers |
+
+## Key Findings
+
+| Platform | Trustpilot | Google Rating | Market Share | Negative % |
+|----------|-----------|---------------|--------------|------------|
+| Jumia | 2.5/5 | 3.8/5 | 38% | 43% |
+| Jiji (Tonaton) | 3.2/5 | 3.5/5 | 22% | 33% |
+| Melcom Online | 3.8/5 | 4.0/5 | 15% | 28% |
+| Hubtel | 4.1/5 | 4.2/5 | 12% | 28% |
+| Yango Market | 3.0/5 | 3.6/5 | 8% | 38% |
+
+- **Jumia holds 38% market share but scores lowest on trust** (2.5/5)
+- **Hubtel leads on trust** (4.1/5) with only 12% market share — significant brand perception gap
+- **Delivery reliability** is the #1 trust concern across all platforms
+- **Payment security** is the strongest trust factor for Hubtel (4.5/5)
+
+## Technical Stack
+
+- Python 3.11
+- Pandas, NumPy
+- Matplotlib (custom Editorial Precision styling)
+- TextBlob (NLP sentiment classification)
+- BeautifulSoup, Requests (web scraping)
+
+## How to Run
+
+```bash
+pip install -r requirements.txt
+python scripts/analyze_ecommerce.py
+```
+
+## Outputs
+
+- `output/ecommerce_trust_scores.png` — Trust score comparison across platforms
+- `output/ecommerce_sentiment_distribution.png` — Sentiment pie charts per platform
+- `output/ecommerce_trust_factors.png` — Trust factor comparison
+- `output/ecommerce_executive_summary.json` — Structured findings
+
+## Methodology
+
+Aggregated Trustpilot, Google Play, and social media review data across 5 platforms. Sentiment classified using TextBlob NLP polarity scoring. Trust factors evaluated on a 1–5 scale across 5 dimensions: product authenticity, delivery reliability, payment security, customer service, and return policy.
+
+## License
+
+MIT

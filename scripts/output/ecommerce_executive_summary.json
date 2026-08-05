@@ -1,0 +1,33 @@
+{
+  "project": "Ghanaian E-Commerce Brand Perception Analysis",
+  "author": "Caleb Agyemang",
+  "platforms_analyzed": 5,
+  "total_reviews_analyzed": 7950,
+  "market_leader": {
+    "platform": "Jumia",
+    "market_share": "38%"
+  },
+  "most_trusted": {
+    "platform": "Hubtel",
+    "trustpilot_score": 4.1
+  },
+  "least_trusted": {
+    "platform": "Jumia",
+    "trustpilot_score": 2.5
+  },
+  "biggest_trust_gap": {
+    "factor": "Delivery Reliability",
+    "jumia_score": 2.2,
+    "hubtel_score": 4.0
+  },
+  "key_finding": "Jumia holds 38% market share but scores lowest on trust (2.5/5). Hubtel leads on trust (4.1/5) with only 12% market share \u2014 a significant brand perception gap. Delivery reliability is the #1 trust concern across all platforms.",
+  "policy_context": "Ghana E-Commerce National Strategy 2025-2029 aims to address trust and infrastructure barriers through regulatory frameworks and consumer protection standards.",
+  "methodology": "Aggregated Trustpilot, Google Play, and social media review data. Sentiment classified using TextBlob NLP. Trust factors scored on 1\u20135 scale across 5 dimensions.",
+  "data_sources": [
+    "Trustpilot Ghana",
+    "Google Play Store",
+    "Ghana E-Commerce National Strategy 2025-2029",
+    "Academic market research (382 consumers)",
+    "Social media sentiment analysis"
+  ]
+}
