@@ -19,7 +19,7 @@ import matplotlib.pyplot as plt
 import json
 import os
 
-OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "output")
+OUTPUT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "output"))
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Design tokens
